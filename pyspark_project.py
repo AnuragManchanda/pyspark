@@ -4,7 +4,7 @@ from pyspark.sql.functions import avg
 # Path to the MySQL Connector/J JAR file
 jar_path = "/Users/anurag/Desktop/pyspark_project/mysql-connector-j-8.4.0/mysql-connector-j-8.4.0.jar"
 
-# Initialize Spark session with the JAR file
+# Initialize Spark session with the JAR file and Spark master
 spark = SparkSession.builder \
     .appName("PySpark Project") \
     .config("spark.jars", jar_path) \
